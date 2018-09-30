@@ -1,0 +1,4 @@
+# Rewrite i resting-katalogen för att få till en snygg REST-URL.
+  RewriteEngine On
+
+  RewriteRule ^products/([a-z]+)/?$ products.php/?api-key=$1 [NC,L]
